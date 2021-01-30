@@ -21,3 +21,7 @@ h2 {
     font-style: italic;
     margin-bottom: 30px;
 }
+
+p {
+    text-align: justify;
+}
