@@ -1,0 +1,17 @@
+autoprefixer-cli -o style.prefixed.css css/style.css
+
+Create .htmlvalidate.json:
+
+{
+  "extends": [
+    "html-validate:recommended"
+  ],
+
+  "rules": {
+    "close-order": "error"
+    "void": ["warn", {"style": "omit"}]
+  }
+}
+
+Run with:
+node_modules/.bin/html-validate index.html
